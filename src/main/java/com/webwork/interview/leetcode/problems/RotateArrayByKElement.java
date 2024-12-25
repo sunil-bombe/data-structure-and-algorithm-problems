@@ -65,6 +65,8 @@ public class RotateArrayByKElement {
       }
     }
 
+
+
 //    Map<Integer, Integer> map = new HashMap<>();
 //    for (Integer i = 0; i < elementArray.length; i++) {
 //      Integer tempIndex = i + rotate;
@@ -88,5 +90,14 @@ public class RotateArrayByKElement {
       System.out.print(elementArray[i] + " ");
     }
   }
+
+    int[] rotate(int[] nums){
+    int temp;
+    for(int i = 0; i < nums.length; i++){
+      temp = nums[i];
+      nums[i] = nums[nums.length-1];
+    }
+    return  null;
+    }
 
 }
